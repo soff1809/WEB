@@ -6,15 +6,15 @@
 
 html
 {
-    background-image: url('Fondo.jpg');
+    background-image: url('imagen.jpg');
     height: 100vh;
-    background-size: cover;
+    background-size:cover;
     background-position:center;
     min-height:100px;
 }
 .header
 {
-    background-image: url('Fondo.jpg');
+    background-image: url('imagen.jpg');
     height: 100vh;
     background-size: cover;
     background-position:center;
@@ -27,7 +27,10 @@ ul
     list-style-type: none;
     margin.top: 30px;
     min-height: 400px;
-    font-size: 17px;
+    margin-right: 40px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -38,7 +41,7 @@ ul li
 ul li a
 {
     text-decoration: none;
-    color:white;
+    color:rgb(0, 63, 19);
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: o.5 ease;
@@ -47,7 +50,7 @@ ul li a
 ul li a:hover
 {
     background-color:white;
-        color:black;    
+    color:black;    
 
 }
 ul li.active a
@@ -58,7 +61,7 @@ ul li.active a
 .logo img
 {
     float:left;
-    width:150px;
+    width:100px;
     height: auto;
 
 }
@@ -70,7 +73,87 @@ ul li.active a
 }
 .title
 {
-    position
+    position:absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1
+{
+    color: #d74545;
+    font-size: 70px;
+
 }
 
+.button
+{
+    position:absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
 
+.btn
+{
+    border: 3px solid #ff00007f;
+    padding=5px 20 px;
+    color: #d74545;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration:none;
+}
+
+.btn:hover
+{
+    background-color: #ffe8e8;
+    color: rgb(46, 172, 145);
+
+}
+
+.tema1
+{
+    position:absolute;
+    top:46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:justify; 
+}
+
+.tema1 h1
+{
+    color: #000000;
+    font-size: 40px;
+    margin-top: 4500px;
+    margin-bottom: 20px;
+}
+.tema1 h2
+{
+    color: #000000;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.tema1 p
+{
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.ejemplo img
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    
+}
+
+.pdf
+{
+    position:absolute;
+}
