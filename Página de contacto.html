@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>WEB DE SOFF</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -13,14 +15,48 @@
                 <img src="logo.png">
             </dir>
             <ul>
-                <li><a href="http://localhost:52330/index.html#inicio"><i class="fa fa-home"></i></i><b>MENÚ</b></a></li>
-                <li><a href="http://localhost:52330/Tema%20de%20la%20p%C3%A1gina.html"><b>TEMA</b></a></li>
-                <li><a href="http://localhost:52330/P%C3%A1gina%20sobre%20mi.html"><b>SOBRE MI</b></a></li>
-                <li><a href="http://localhost:52330/P%C3%A1gina%20Red.html"><b>RED</b></a></li>
-                <li><a href="http://localhost:52330/P%C3%A1gina%20FII.html"><b>FII</b></a></li>
-                <li  class="active"><a href="http://localhost:52330/P%C3%A1gina%20de%20contacto.html"><b>CONTACTO</b></a></li>
+                <li ><a href="index.html"><i class="fa fa-home"></i></i><b>MENÚ</b></a></li>
+                <li><a href="Tema de la página.html"><b>TEMA</b></a></li>
+                <li><a href="Página sobre mi.html"><b>SOBRE MI</b></a></li>
+                <li><a href="Página Red.html"><b>RED</b></a></li>
+                <li ><a href="Página FII.html"><b>FII</b></a></li>
+                <li class="active"><a href="Página de contacto.html"><b>CONTACTO</b></a></li>
             </ul>
         </div>
     </header>
-</body>        
+
+    <div class="form">
+        <form action="mailto:casado.sainz1809@gmail.com" method="post" id="text/plain">
+            <h1>Contacto</h1>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="consulta">Pregunta</option>
+                <option value="colaboracion">Colaboración</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <label>
+                <input type="checkbox" name="suscripcion" value="1">
+                Suscribirse a nuestro boletín
+            </label>
+
+            <input type="submit" value="Enviar">
+            <p class="error-message" id="error-message"></p>
+        </form>
+
+        <script src="scripts.js"></script>
+    </div>  
+    
+</body>
+
 </html>
