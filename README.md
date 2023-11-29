@@ -14,3 +14,4 @@ Dificultades en cuanto al css, he visto dificultades al no saber como estilizar 
 Conclusiones:
 Mi conclusión, la página web con los requisitos que se piden, lo veo factible. Y me ha ayudado a interesarme bastante sobre este tema, y este método de programación, y me he entretenido bastante. He sabido afrontar las dificultades que me han ido surgiendo y he aprendido de ellas.
 
+Para los iconos de los logos he utilizado: https://fontawesome.com/v4/icons/
